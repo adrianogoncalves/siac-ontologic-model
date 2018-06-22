@@ -1,0 +1,588 @@
+@prefix : <#> .
+@prefix db: <file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/> .
+@prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix d2r: <http://sites.wiwiss.fu-berlin.de/suhl/bizer/d2r-server/config.rdf#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix map: <file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix swc: <http://data.semanticweb.org/ns/swc/ontology/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix jdbc: <http://d2rq.org/terms/jdbc/> .
+@prefix meta: <http://www4.wiwiss.fu-berlin.de/bizer/d2r-server/metadata#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix aiiso: <http://purl.org/vocab/aiiso/schema#> .
+@prefix vocab: <file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/vocab/> .
+@prefix schema: <http://www.schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://www.w3.org/2002/07/owl#> .
+@prefix swrc: <http://swrc.ontoware.org/ontology#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://d2rq.org/terms/jdbc/autoReconnect
+jdbc:autoReconnect rdf:type owl:AnnotationProperty .
+
+
+###  http://d2rq.org/terms/jdbc/zeroDateTimeBehavior
+jdbc:zeroDateTimeBehavior rdf:type owl:AnnotationProperty .
+
+
+###  http://sites.wiwiss.fu-berlin.de/suhl/bizer/d2r-server/config.rdf#sparqlTimeout
+d2r:sparqlTimeout rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#alias
+d2rq:alias rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#belongsToClassMap
+d2rq:belongsToClassMap rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#class
+d2rq:class rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#classDefinitionLabel
+d2rq:classDefinitionLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#column
+d2rq:column rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#dataStorage
+d2rq:dataStorage rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#databaseValue
+d2rq:databaseValue rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#href
+d2rq:href rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#jdbcDSN
+d2rq:jdbcDSN rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#jdbcDriver
+d2rq:jdbcDriver rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#join
+d2rq:join rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#password
+d2rq:password rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#pattern
+d2rq:pattern rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#property
+d2rq:property rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#propertyDefinitionLabel
+d2rq:propertyDefinitionLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#rdfValue
+d2rq:rdfValue rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#refersToClassMap
+d2rq:refersToClassMap rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#sqlExpression
+d2rq:sqlExpression rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#translateWith
+d2rq:translateWith rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#uriColumn
+d2rq:uriColumn rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#uriPattern
+d2rq:uriPattern rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#username
+d2rq:username rdf:type owl:AnnotationProperty .
+
+
+###  http://www4.wiwiss.fu-berlin.de/bizer/d2r-server/metadata#datasetTitle
+meta:datasetTitle rdf:type owl:AnnotationProperty .
+
+
+###  http://www4.wiwiss.fu-berlin.de/bizer/d2r-server/metadata#operatorName
+meta:operatorName rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://sites.wiwiss.fu-berlin.de/suhl/bizer/d2r-server/config.rdf#Server
+d2r:Server rdf:type owl:Class .
+
+
+###  http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#ClassMap
+d2rq:ClassMap rdf:type owl:Class .
+
+
+###  http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#Database
+d2rq:Database rdf:type owl:Class .
+
+
+###  http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#PropertyBridge
+d2rq:PropertyBridge rdf:type owl:Class .
+
+
+###  http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#TranslationTable
+d2rq:TranslationTable rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#SwcTypeTranslationTable
+map:SwcTypeTranslationTable rdf:type owl:NamedIndividual ,
+                                     d2rq:TranslationTable ;
+                            d2rq:href <file:///C:/Users/Adriano%20Gon%C3%A7alves/Dropbox%20(Adriano%20UFRJ%201)/home-ufrj/Meu%20Mestrado/D2RQ/modalidades_apresentacao_swc.csv> .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#area_conhecimento
+map:area_conhecimento rdf:type owl:NamedIndividual ,
+                               d2rq:ClassMap ;
+                      d2rq:class skos:Concept, swrc:ResearchTopic ;
+                      d2rq:classDefinitionLabel "area_conhecimento" ;
+                      d2rq:dataStorage map:database_views ;
+                      d2rq:uriPattern "area_conhecimento/@@v_area_conhecimento.id@@" .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#area_conhecimento2
+map:area_conhecimento2 rdf:type owl:NamedIndividual ,
+                                d2rq:ClassMap ;
+                       d2rq:class skos:Concept ;
+                       d2rq:classDefinitionLabel "area_conhecimento" ;
+                       d2rq:dataStorage map:database_views ;
+                       d2rq:uriPattern "area_conhecimento/@@v_area_conhecimento.id@@" .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#area_conhecimento__label
+map:area_conhecimento__label rdf:type owl:NamedIndividual ,
+                                      d2rq:PropertyBridge ;
+                             d2rq:belongsToClassMap map:area_conhecimento ;
+                             d2rq:column "v_area_conhecimento.descricao" ;
+                             d2rq:property rdfs:label .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#area_conhecimento_area_id__ref
+map:area_conhecimento_area_id__ref rdf:type owl:NamedIndividual ,
+                                            d2rq:PropertyBridge ;
+                                   d2rq:alias "v_area_conhecimento AS area_conhecimento_pai" ;
+                                   d2rq:belongsToClassMap map:area_conhecimento ;
+                                   d2rq:join "v_area_conhecimento.id_area_pai => area_conhecimento_pai.id" ;
+                                   d2rq:property skos:broader ;
+                                   d2rq:refersToClassMap map:area_conhecimento .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#area_conhecimento_area_id__ref_narrower
+map:area_conhecimento_area_id__ref_narrower rdf:type owl:NamedIndividual ,
+                                                     d2rq:PropertyBridge ;
+                                            d2rq:alias "v_area_conhecimento AS area_conhecimento_filho" ;
+                                            d2rq:belongsToClassMap map:area_conhecimento ;
+                                            d2rq:join "area_conhecimento_filho.id_area_pai <= v_area_conhecimento.id" ;
+                                            d2rq:property skos:narrower ;
+                                            d2rq:refersToClassMap map:area_conhecimento2 .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#area_conhecimento_descricao
+map:area_conhecimento_descricao rdf:type owl:NamedIndividual ,
+                                         d2rq:PropertyBridge ;
+                                d2rq:belongsToClassMap map:area_conhecimento ;
+                                d2rq:column "v_area_conhecimento.descricao" ;
+                                d2rq:property skos:prefLabel ;
+                                d2rq:propertyDefinitionLabel "area_conhecimento descricao" .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#curso
+map:curso rdf:type owl:NamedIndividual ,
+                   d2rq:ClassMap ;
+          d2rq:class aiiso:Course ,
+                     schema:Course ;
+          d2rq:classDefinitionLabel "curso" ;
+          d2rq:dataStorage map:database_views ;
+          d2rq:uriPattern "curso/@@v_cursos.id@@" .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#curso__label
+map:curso__label rdf:type owl:NamedIndividual ,
+                          d2rq:PropertyBridge ;
+                 d2rq:belongsToClassMap map:curso ;
+                 d2rq:pattern "@@v_cursos.curso@@" ;
+                 d2rq:property schema:name ,
+                               rdfs:label ,
+                               foaf:name .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#database
+map:database rdf:type owl:NamedIndividual ,
+                      d2rq:Database ;
+             jdbc:autoReconnect "true" ;
+             jdbc:zeroDateTimeBehavior "convertToNull" ;
+             d2rq:jdbcDSN "jdbc:mysql:///siac" ;
+             d2rq:jdbcDriver "com.mysql.jdbc.Driver" ;
+             d2rq:password "siac" ;
+             d2rq:username "siac" .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#database_views
+map:database_views rdf:type owl:NamedIndividual ,
+                            d2rq:Database ;
+                   jdbc:autoReconnect "true" ;
+                   jdbc:zeroDateTimeBehavior "convertToNull" ;
+                   d2rq:jdbcDSN "jdbc:mysql:///siac_views" ;
+                   d2rq:jdbcDriver "com.mysql.jdbc.Driver" ;
+                   d2rq:password "siac" ;
+                   d2rq:username "siac" .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#instituicao
+map:instituicao rdf:type owl:NamedIndividual ,
+                         d2rq:ClassMap ;
+                d2rq:class schema:EducationalOrganization ,
+							foaf:Organization,
+							swrc:Organization;
+                d2rq:classDefinitionLabel "instituicao" ;
+                d2rq:dataStorage map:database_views ;
+                d2rq:uriPattern "instituicao/@@v_instituicao.nome|urlify@@" .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#instituicao__description
+map:instituicao__description rdf:type owl:NamedIndividual ,
+                                      d2rq:PropertyBridge ;
+                             d2rq:belongsToClassMap map:instituicao ;
+                             d2rq:pattern "@@v_instituicao.nome@@" ;
+                             d2rq:property schema:description .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#instituicao__label
+map:instituicao__label rdf:type owl:NamedIndividual ,
+                                d2rq:PropertyBridge ;
+                       d2rq:belongsToClassMap map:instituicao ;
+                       d2rq:property rdfs:label, foaf:name ;
+                       d2rq:sqlExpression "UPPER(v_instituicao.nome)" .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#instituicao_nome
+map:instituicao_nome rdf:type owl:NamedIndividual ,
+                              d2rq:PropertyBridge ;
+                     d2rq:belongsToClassMap map:instituicao ;
+                     d2rq:property schema:name ;
+                     d2rq:propertyDefinitionLabel "instituicao nome" ;
+                     d2rq:sqlExpression "UPPER(v_instituicao.nome)" .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#instituicao_sigla
+map:instituicao_sigla rdf:type owl:NamedIndividual ,
+                               d2rq:PropertyBridge ;
+                      d2rq:belongsToClassMap map:instituicao ;
+                      d2rq:column "v_instituicao.sigla" ;
+                      d2rq:property schema:alternateName ;
+                      d2rq:propertyDefinitionLabel "instituicao sigla" .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#palavra_chave
+map:palavra_chave rdf:type owl:NamedIndividual ,
+                           d2rq:ClassMap ;
+                  d2rq:class skos:Concept ;
+                  d2rq:classDefinitionLabel "palavra_chave" ;
+                  d2rq:dataStorage map:database_views ;
+                  d2rq:uriPattern "palavra_chave/@@v_palavra_chave.descricao_min|urlify@@" .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#palavra_chave__label
+map:palavra_chave__label rdf:type owl:NamedIndividual ,
+                                  d2rq:PropertyBridge ;
+                         d2rq:belongsToClassMap map:palavra_chave ;
+                         d2rq:property rdfs:label ;
+                         d2rq:sqlExpression "LOWER(v_palavra_chave.descricao)" .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#palavra_chave_descricao
+map:palavra_chave_descricao rdf:type owl:NamedIndividual ,
+                                     d2rq:PropertyBridge ;
+                            d2rq:belongsToClassMap map:palavra_chave ;
+                            d2rq:column "v_palavra_chave.descricao" ;
+                            d2rq:property schema:description ;
+                            d2rq:propertyDefinitionLabel "palavra_chave descricao" .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#palavra_chavepref_label
+map:palavra_chavepref_label rdf:type owl:NamedIndividual ,
+                                     d2rq:PropertyBridge ;
+                            d2rq:belongsToClassMap map:palavra_chave ;
+                            d2rq:property skos:prefLabel ;
+                            d2rq:sqlExpression "LOWER(v_palavra_chave.descricao)" .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#trabalho_cidade_publicacao
+map:trabalho_cidade_publicacao rdf:type owl:NamedIndividual ,
+                                        d2rq:PropertyBridge ;
+                               d2rq:belongsToClassMap map:trabalho_publicado ;
+                               d2rq:property schema:location ,
+                                             schema:locationCreated ;
+                               d2rq:uriColumn "v_artigos_publicados.uri_cidade" .
+
+#map:trabalho_cidade_publicacao rdf:type owl:NamedIndividual ,
+#                                        d2rq:PropertyBridge ;
+#                               d2rq:belongsToClassMap map:trabalho_publicado ;
+#                               d2rq:property schema:location ,
+#                                             schema:locationCreated ;
+#								d2rq:join "v_artigos_publicados.campus_apresentacao_id => v_campus_apresentacao.id" ;
+#                               d2rq:refersToClassMap map:cidade_apresentacao
+#							   .
+
+#map:cidade_apresentacao rdf:type owl:NamedIndividual ,
+#                     d2rq:ClassMap ;
+#            d2rq:class <dbo:City> ;
+#            d2rq:classDefinitionLabel "v_campus_apresentacao" ;
+#            d2rq:dataStorage map:database_views ;
+#            d2rq:uriPattern "cidade/@@v_campus_apresentacao.id@@" .
+
+						
+#map:cidade_apresentacao_sameas rdf:type owl:NamedIndividual ,
+#                                     d2rq:PropertyBridge ;
+#                            d2rq:belongsToClassMap map:cidade_apresentacao ;
+#                            d2rq:uriColumn "v_campus_apresentacao.uri_cidade" ;
+#                            d2rq:property <owl:sameAs> 							
+#							.			  
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#trabalho_data_publicaco
+map:trabalho_data_publicaco rdf:type owl:NamedIndividual ,
+                                     d2rq:PropertyBridge ;
+                            d2rq:belongsToClassMap map:trabalho_publicado ;
+                            d2rq:pattern "@@v_artigos_publicados.data_sessao@@" ;
+                            d2rq:property dcterms:created ,
+                                          dcterms:date ,
+                                          schema:datePublished .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#trabalho_publicado
+map:trabalho_publicado rdf:type owl:NamedIndividual ,
+                                d2rq:ClassMap ;
+                       d2rq:class swc:Artefact ,
+                                  dbo:Article ,
+                                  dcterms:BibliographicResource ,
+                                  bibo:Article ,
+                                  schema:Article ,
+                                  foaf:Document,
+								  swrc:Publication;
+                       d2rq:classDefinitionLabel "Trabalho Publicado" ;
+                       d2rq:dataStorage map:database_views ;
+                       d2rq:uriPattern "trabalhoPublicado/@@v_artigos_publicados.id@@" .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#trabalho_publicado__label
+map:trabalho_publicado__label rdf:type owl:NamedIndividual ,
+                                       d2rq:PropertyBridge ;
+                              d2rq:belongsToClassMap map:trabalho_publicado ;
+                              d2rq:pattern "@@v_artigos_publicados.titulo@@" ;
+                              d2rq:property rdfs:label .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#trabalho_publicado_area_conhecimento
+map:trabalho_publicado_area_conhecimento rdf:type owl:NamedIndividual ,
+                                                  d2rq:PropertyBridge ;
+                                         d2rq:belongsToClassMap map:trabalho_publicado ;
+                                         d2rq:join "v_artigos_publicados.id_area_conhecimento_final => v_area_conhecimento.id" ;
+                                         d2rq:property dcterms:subject ,
+                                                       schema:genre;
+                                         d2rq:refersToClassMap map:area_conhecimento .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#trabalho_publicado_autor
+map:trabalho_publicado_autor rdf:type owl:NamedIndividual ,
+                                      d2rq:PropertyBridge ;
+                             d2rq:belongsToClassMap map:trabalho_publicado ;
+                             d2rq:join "v_artigos_publicados.id => v_autor_artigo.artigo_id" ,
+                                       "v_autor_artigo.etapa => v_artigos_publicados.etapa" ,
+                                       "v_autor_artigo.ordem => v_artigos_publicados.ordem" ,
+                                       "v_autor_artigo.usuario_id => v_usuario.id" ;
+                             d2rq:property dcterms:creator ,
+                                           schema:author ,
+                                           foaf:maker ;
+                             d2rq:refersToClassMap map:usuario .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#trabalho_publicado_modalidade_apresentacao
+map:trabalho_publicado_modalidade_apresentacao rdf:type owl:NamedIndividual ,
+                                                        d2rq:PropertyBridge ;
+                                               d2rq:belongsToClassMap map:trabalho_publicado ;
+                                               d2rq:property rdf:type ;
+                                               d2rq:translateWith map:SwcTypeTranslationTable ;
+                                               d2rq:uriColumn "v_artigos_publicados.modalidade_apresentacao_id" .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#trabalho_publicado_palavra_chave_revisao_id__ref
+map:trabalho_publicado_palavra_chave_revisao_id__ref rdf:type owl:NamedIndividual ,
+                                                              d2rq:PropertyBridge ;
+                                                     d2rq:belongsToClassMap map:trabalho_publicado ;
+                                                     d2rq:join "v_palavra_chave.revisao_id => v_artigos_publicados.revisao_id" ;
+                                                     d2rq:property schema:about, swrc:isAbout ;
+                                                     d2rq:refersToClassMap map:palavra_chave .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#trabalho_publicado_palavra_chave_revisao_id__ref_keywords
+map:trabalho_publicado_palavra_chave_revisao_id__ref_keywords rdf:type owl:NamedIndividual ,
+                                                                       d2rq:PropertyBridge ;
+                                                              d2rq:belongsToClassMap map:trabalho_publicado ;
+                                                              d2rq:column "v_palavra_chave.descricao" ;
+                                                              d2rq:join "v_palavra_chave.revisao_id => v_artigos_publicados.revisao_id" ;
+                                                              d2rq:property schema:keywords .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#trabalho_publicado_resumo_art_body
+map:trabalho_publicado_resumo_art_body rdf:type owl:NamedIndividual ,
+                                                d2rq:PropertyBridge ;
+                                       d2rq:belongsToClassMap map:trabalho_publicado ;
+                                       d2rq:pattern "@@v_artigos_publicados.resumo@@" ;
+                                       d2rq:property schema:articleBody .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#trabalho_publicado_resumo_description
+map:trabalho_publicado_resumo_description rdf:type owl:NamedIndividual ,
+                                                   d2rq:PropertyBridge ;
+                                          d2rq:belongsToClassMap map:trabalho_publicado ;
+                                          d2rq:pattern "@@v_artigos_publicados.resumo@@" ;
+                                          d2rq:property schema:description .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#trabalho_publicado_resumo_text
+map:trabalho_publicado_resumo_text rdf:type owl:NamedIndividual ,
+                                            d2rq:PropertyBridge ;
+                                   d2rq:belongsToClassMap map:trabalho_publicado ;
+                                   d2rq:pattern "@@v_artigos_publicados.resumo@@" ;
+                                   d2rq:property schema:text .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#trabalho_publicado_titulo
+map:trabalho_publicado_titulo rdf:type owl:NamedIndividual ,
+                                       d2rq:PropertyBridge ;
+                              d2rq:belongsToClassMap map:trabalho_publicado ;
+                              d2rq:pattern "@@v_artigos_publicados.titulo@@" ;
+                              d2rq:property schema:name, dcterms:title .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#usuario
+map:usuario rdf:type owl:NamedIndividual ,
+                     d2rq:ClassMap ;
+            d2rq:class foaf:Person ,
+                       schema:Person,
+						swrc:Person;
+            d2rq:classDefinitionLabel "v_usuario" ;
+            d2rq:dataStorage map:database_views ;
+            d2rq:uriPattern "usuario/@@v_usuario.id@@" .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#usuario__label
+map:usuario__label rdf:type owl:NamedIndividual ,
+                            d2rq:PropertyBridge ;
+                   d2rq:belongsToClassMap map:usuario ;
+                   d2rq:pattern "@@v_usuario.nome@@ @@v_usuario.sobrenome@@" ;
+                   d2rq:property rdfs:label ,
+                                 foaf:name .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#usuario_curso
+map:usuario_curso rdf:type owl:NamedIndividual ,
+                           d2rq:PropertyBridge ;
+                  d2rq:belongsToClassMap map:usuario ;
+                  d2rq:join "v_usuario.id => v_usuario_curso.usuario_id" ,
+                            "v_usuario_curso.curso_id => v_cursos.id" ;
+                  d2rq:property dcterms:related, swrc:member ;
+                  d2rq:propertyDefinitionLabel "Curso" ;
+                  d2rq:refersToClassMap map:curso .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#usuario_email_mbox_sha1sum
+map:usuario_email_mbox_sha1sum rdf:type owl:NamedIndividual ,
+                                        d2rq:PropertyBridge ;
+                               d2rq:belongsToClassMap map:usuario ;
+                               d2rq:property foaf:mbox_sha1sum ;
+                               d2rq:propertyDefinitionLabel "mbox sha1sum" ;
+                               d2rq:sqlExpression "SHA1(CONCAT('mailto:', v_usuario.email))" .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#usuario_instituicao_instituicao_id
+map:usuario_instituicao_instituicao_id rdf:type owl:NamedIndividual ,
+                                                d2rq:PropertyBridge ;
+                                       d2rq:belongsToClassMap map:usuario ;
+                                       d2rq:join "v_usuario.id => v_usuario_instituicao.usuario_id" ,
+                                                 "v_usuario_instituicao.instituicao_id => v_instituicao.id" ;
+                                       d2rq:property schema:affiliation, swrc:member ;
+                                       d2rq:propertyDefinitionLabel "usuario_instituicao instituicao_id" ;
+                                       d2rq:refersToClassMap map:instituicao .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#usuario_nome
+map:usuario_nome rdf:type owl:NamedIndividual ,
+                          d2rq:PropertyBridge ;
+                 d2rq:belongsToClassMap map:usuario ;
+                 d2rq:column "v_usuario.nome" ;
+                 d2rq:property foaf:firstName ,
+                               schema:givenName,
+								swrc:firstName;
+                 d2rq:propertyDefinitionLabel "usuario nome" .
+
+
+###  file:/C:/Users/Adriano%20Gonçalves/Dropbox/home-ufrj/Meu%20Mestrado/D2RQ/#usuario_sobrenome
+map:usuario_sobrenome rdf:type owl:NamedIndividual ,
+                               d2rq:PropertyBridge ;
+                      d2rq:belongsToClassMap map:usuario ;
+                      d2rq:column "v_usuario.sobrenome" ;
+                      d2rq:property schema:FamilyName,foaf:familyName,foaf:surname, swrc:lastName ;
+                      d2rq:propertyDefinitionLabel "usuario sobrenome" .
+
+
+###  http://www.w3.org/2002/07/owl
+<http://www.w3.org/2002/07/owl> rdf:type owl:NamedIndividual ,
+                                         d2r:Server ;
+                                d2r:sparqlTimeout 0 ;
+								d2r:pageTimeout 0;
+                                rdfs:label "Sistema SIAC" ;
+                                meta:datasetTitle "Sistema SIAC" ;
+                                meta:operatorName "Adriano Gonçalves" .
+
+
+[ d2rq:databaseValue "F" ;
+  d2rq:rdfValue schema:Female
+] .
+
+[ d2rq:databaseValue "M" ;
+   d2rq:rdfValue schema:Male
+ ] .
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
